@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey IU</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="title">IU Survey Form by Fans</h1>
+    <p id="description">Tolong di isi ya cuy </p>
+
+    <form id="survey-form">
+        <label for="name" id="name-label">
+            Nama
+            <input type="text"  id="name" placeholder="Masukan nama kamu" required>
+        </label>
+        <label for="email" id="email-label">
+            Email
+            <input type="email"  id="email" placeholder="Masukan email kamu" required>
+        </label>
+        <label for="number" id="number-label">
+            Umur
+            <input type="number"  id="number" placeholder="Umur" min="14" max="30" required>
+        </label>
+
+        <label for="dropdown" id="dropdown-label">
+            Bagaimana kamu tau IU?
+            <select id="dropdown">
+                <option value="Sosmed">Sosmed</option>
+                <option value="Kdrama">Kdrama</option>
+                <option value="Kpop">Kpop</option>
+            </select>
+        </label>
+            <label for="lagu" id="lagu-label">Apa lagu kesukaan IU yang kamu sukai?</label>
+
+            <input type="radio" name="lagu" value="1" checked /> Blueming <br/>
+            <input type="radio" name="lagu" value="2" /> Celebrity <br/>
+            <input type="radio" name="lagu" value="3" /> EIGHT <br/>
+            <input type="radio" name="lagu" value="4"  /> Love poem <br/>
+            <input type="radio" name="lagu" value="5" /> BIBIBI <br/>
+
+            <br/> <br/>
+
+        <label for="drama" id="drama-label">Drama IU yang sudah kamu tonton?</label>
+
+            <input type="checkbox" value="Moon Lovers" /> Moon Lovers <br/>
+            <input type="checkbox" value="Hotel Del Luna" />Hotel Del Luna <br/>
+
+        <br/> <br/>
+
+        <label for="comment" id="comment-label">
+            Ada yang mau comments?
+            <textarea id="comment" cols="30" rows="10"></textarea>
+        </label>
+
+        <button id="submit" type="submit">Submit</button>
+    </form>
+    
+</body>
+</html>
